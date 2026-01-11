@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<title>Megújuló energiaforrások</title>
+<style>
+body {
+    margin:0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right,#eeeeee,#bdbdbd);
+    min-height: 100vh;
+}
+
+/* Felső menü */
+.navbar {
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    background:#333;
+    padding:10px;
+}
+
+.nav-button {
+    background:transparent;
+    color:white;
+    border:1px solid white;
+    padding:6px 15px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.nav-button:hover {
+    background:white;
+    color:black;
+}
+
+/* Oldal tartalom */
+.page {
+    display:none;
+    padding:40px;
+    max-width:1000px;
+    margin:auto;
+    color:#333;
+    line-height:1.6;
+    background:white;
+    border-radius:8px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.2);
+}
+
+.page.active {
+    display:block;
+}
+
+h1, h2, h3, h4 {
+    text-align:center;
+}
+</style>
+
+<script>
+function showPage(id) {
+    document.querySelectorAll(".page").forEach(p => {
+        p.classList.remove("active");
+    });
+    document.getElementById(id).classList.add("active");
+}
+</script>
+</head>
+<body>
+
+<!-- Felső menü -->
+<div class="navbar">
+    <button class="nav-button" onclick="showPage('altalanos')">Általános</button>
+    <button class="nav-button" onclick="showPage('napenergia')">Napenergia</button>
+    <button class="nav-button" onclick="showPage('szelviz')">Szél és víz</button>
+    <button class="nav-button" onclick="showPage('biomassza')">Biomassza</button>
+    <button class="nav-button" onclick="showPage('geotermikus')">Geotermikus</button>
+</div>
+
+<!-- Általános tájékoztató -->
+<div id="altalanos" class="page active">
+<h1>Általános tájékoztató</h1>
+<h2>EnergiaGazdaság – Megújuló energiaforrások</h2>
+
+<h3>1. Miért van szükség megújuló energiaforrásokra?</h3>
+<p>A nem megújuló energiahordozók túlzott felhasználása, az ebből eredő környezetszennyezés és a hagyományos energiahordozók véges mennyisége is hozzájárul ahhoz, hogy egyre inkább a megújuló energiaforrások kerülnek előtérbe. Ide tartozik a: Nap-, szél-, víz-, geotermikus energia és a biomassza, amit hazánkban hasznosítanak.</p>
+
+<h4>Előnyök:</h4>
+<ul>
+<li>Újratermelődnek, nem fogynak el.</li>
+<li>Nincs károsanyag-kibocsátásuk (pl. üvegház-hatású gázok: vízgőz, szén-dioxid, metán, dinitrogén-oxid, ózon).</li>
+<li>Hozzájárulnak a fenntartható fejlődéshez.</li>
+</ul>
+
+<h4>Hátrányok:</h4>
+<ul>
+<li>Nem állnak rendelkezésre folyamatosan: szél- és napenergia</li>
+<li>Drága a hasznosításukat lehetővé tevő technológia</li>
+<li>Nem egyenletes az általuk biztosított energia mennyisége</li>
+</ul>
+
+<p>Hazánk is elkötelezett a részesedés növelés mellett az energiafelhasználásban.</p>
+
+<h3>2. Hogyan változott az emberek energiafelhasználása az idők során?</h3>
+<p><strong>Primitív energiafelhasználás:</strong> Alapvető túlélési igényeket elégített ki, pl. vadászat, gyűjtögetés.</p>
+<p><strong>Tűzhasználat:</strong> A tűz felfedezése és hasznosítása a természetben való élet első emberi lépése.</p>
+<p><strong>Fosszilis energiahordozók:</strong> Malmok, gőzgép a tűzhasználat következményeként jelentek meg.</p>
+<p><strong>Megújuló források és modern innovációk:</strong> Gőzturbinák, modern rendszerek a fosszilis energiahordozók következményeként jelentek meg a jelenlegi energiaellátásban.</p>
+</div>
+
+<!-- Napenergia -->
+<div id="napenergia" class="page">
+<h1>Napenergia</h1>
+<p>A Nap energiája hő és fény formájában sugárzással jut el a Földre, és az emberiség ősidők óta hasznosítja. A napenergia hasznosításának két fő módja van: a passzív és az aktív felhasználás.</p>
+
+<p>Passzív hasznosításkor az épületek tájolása, az üvegfelületek és az építőanyagok segítik a hő megtartását, főként az átmeneti évszakokban.</p>
+
+<p>Aktív hasznosítás során technikai eszközökkel alakítják át a napenergiát hő- vagy elektromos energiává. A napkollektorok hőenergiát termelnek fűtésre és meleg víz előállítására, míg a napelemek (fotovoltaikus eszközök) elektromos áramot hoznak létre.</p>
+
+<p>A Földre érkező napsugárzás mennyisége óriási: egyetlen óra alatt több energia érkezik, mint amennyit az emberiség egy év alatt felhasznál. A Nap energiája alapvető szerepet játszik az éghajlat, a légkör mozgása, a víz körforgása és a fotoszintézis működésében. A napenergia szinte minden megújuló energia alapja, sőt a fosszilis energiahordozók is közvetve ebből származnak.</p>
+
+<p>Az építészetben a napenergia megfelelő tájolással, árnyékolással és modern technológiákkal hatékonyan hasznosítható. A mezőgazdaságban a napenergia növeli a terméshozamot, és felhasználható szárításra, öntözésre vagy üvegházak működtetésére is. A naperőművek világszerte és Magyarországon is gyorsan terjednek, jelentősen csökkentve a szén-dioxid-kibocsátást.</p>
+
+<p>Előnye: tiszta, megújuló és hosszú távon „ingyenes”.<br>Hátránya: időjárásfüggőség és a magas beruházási költség. Összességében a napenergia kulcsszerepet játszik a fenntartható jövő és az energiafüggetlenség megteremtésében.</p>
+</div>
+
+<!-- Szél- és vízenergia -->
+<div id="szelviz" class="page">
+<h1>Szél- és vízenergia</h1>
+<p>A szélenergia a levegő mozgási energiáját jelenti, amelyet az emberiség már évezredek óta hasznosít. Kezdetben vitorlás hajók és szélmalmok működtetésére szolgált, például gabonaőrlésre vagy vízszivattyúzásra. A modern korban a szélturbinák a szél forgási energiáját elektromos árammá alakítják. Ezek működhetnek önállóan vagy nagyobb csoportokban, úgynevezett szélfarmokban.</p>
+
+<p>A szélenergia egyik legnagyobb előnye, hogy megújuló, kifogyhatatlan és működése során nem bocsát ki szén-dioxidot. Nem igényel tüzelőanyagot, csökkenti az energiafüggőséget, és ma már az egyik legolcsóbb áramtermelési mód. A szél- és napenergia jól kiegészítik egymást, mivel eltérő időjárási körülmények között termelnek hatékonyabban.</p>
+
+<p>A szél a Nap egyenetlen hőeloszlásának következtében alakul ki, a hőmérséklet-különbségek globális légáramlásokat hoznak létre. Európában több ország – például Dánia és Németország – jelentős arányban támaszkodik szélenergiára. Magyarországon azonban jogszabályi korlátozások miatt a szélerőművek fejlesztése visszaszorult.</p>
+
+<p>A vízenergia szintén megújuló energiaforrás, amely a víz eséséből vagy folyásából származó energiát hasznosítja. Már az ókorban alkalmazták malmok és öntözőrendszerek működtetésére. Napjainkban a vízerőművek turbinák segítségével alakítják át a víz energiáját elektromos árammá.</p>
+
+<p>A vízenergia nagy előnye a kiszámíthatóság és az egyenletes teljesítmény, valamint az alacsony üzemeltetési költség. Nem termel szén-dioxidot, és a világ villamosenergia-termelésének jelentős részét adja. Hátrányai közé tartozik az ökoszisztémák károsítása, az eliszaposodás és nagy területek elárasztása.</p>
+
+<p>Összességében a szél- és vízenergia fontos szerepet játszik a fenntartható, környezetbarát energiatermelésben, és kulcsfontosságú a jövő energiaellátásában.</p>
+</div>
+
+<!-- Biomassza -->
+<div id="biomassza" class="page">
+<h1>Biomassza</h1>
+<p>A biomassza ökológiai fogalom, amely az élő szervezetek által létrehozott szerves anyagok össztömegét jelenti. A növények fotoszintézis során a Nap energiáját szerves anyag formájában raktározzák, ezt nevezzük elsődleges produkciónak. Az állatok és lebontó szervezetek által létrehozott szerves anyag a másodlagos produkció. Egy adott ökoszisztémában jelen lévő élőlények össztömege alkotja a biomasszát, amely magában foglalja a fitomasszát, a zoomasszát és más élőlények tömegét.</p>
+
+<p>A biomasszához kapcsolódik a nekromassza is, amely az elhalt, de még nem lebomlott szerves anyagokat jelenti, például az elhalt fatesteket. Az elhalt szerves anyag lebomolhat, eléghet vagy hosszú idő alatt a föld mélyére kerülve fosszilis energiahordozóvá alakulhat. A biomassza fontos jellemzője a produkció, vagyis az időegység alatt keletkező szerves anyag mennyisége. A szárazföldi ökoszisztémákban ez jelentős energiamennyiséget köt meg.</p>
+
+<p>A biomassza széntartalma magas, ezért energetikai hasznosítása az energiaválság óta egyre nagyobb figyelmet kap. Energiatermelésre szilárd, folyékony és gáz halmazállapotban használható fel. Szilárd formában főként tüzeléssel, például fa, pellet, szalma vagy energiafű elégetésével hasznosítják. Gáz formában biogáz állítható elő növényi és állati hulladékból. Folyékony üzemanyagként bioetanol és biodízel készíthető különböző növényekből.</p>
+
+<p>A biomassza előnye, hogy megújuló energiaforrás lehet, és hozzájárulhat a fosszilis tüzelőanyagok kiváltásához. Ugyanakkor felhasználása csak fenntartható módon elfogadható, mert az élelmiszertermeléssel, a biodiverzitással és a klímavédelemmel is ütközhet. Emiatt a biomassza energetikai alkalmazása komoly környezeti és társadalmi viták tárgya.</p>
+</div>
+
+<!-- Geotermikus energia -->
+<div id="geotermikus" class="page">
+<h1>Geotermikus energia</h1>
+<p>A geotermikus energia a Föld belsejéből származó hőenergia, amelyet fűtésre és elektromos áram termelésére használhatnak, és megújuló, környezetbarát energiaforrásnak számít.</p>
+
+<h3>Mi a geotermikus energia?</h3>
+<p>A geotermikus energia a Föld belsejében tárolt hő, amely a radioaktív elemek természetes bomlásából és a Föld kialakulása során felhalmozódott maradékhőből származik. A geotermikus erőművek ezt a hőenergiát használják fel elektromos áram előállítására, vagy közvetlenül fűtési rendszerekben alkalmazzák.</p>
+
+<h3>Hogyan működik?</h3>
+<p>A geotermikus energia kitermelése során a Föld belsejéből származó hőt különböző módszerekkel hasznosítják. A leggyakoribb módszer a geotermikus kutak fúrása, amelyek lehetővé teszik a magas hőmérsékletű víz és gőz elérését. Ezt a hőt ezután turbinák meghajtására használják, amelyek elektromos áramot termelnek, vagy közvetlenül fűtési rendszerekbe vezetik.</p>
+
+<h3>Előnyök:</h3>
+<ul>
+<li>Megújuló forrás: folyamatosan rendelkezésre áll, nem függ az időjárástól.</li>
+<li>Környezetbarát: nem jár szén-dioxid-kibocsátással.</li>
+<li>Stabil energiaforrás: hosszú élettartamú és megbízható.</li>
+</ul>
+
+<h3>Hátrányok:</h3>
+<ul>
+<li>Infrastruktúra költségek: kiépítés drága.</li>
+<li>Földrajzi korlátok: legjobb adottságok aktív vulkánok közelében találhatók.</li>
+</ul>
+
+<p>A geotermikus energia tehát egy ígéretes és fenntartható energiaforrás.</p>
+</div>
+
+</body>
+</html>
